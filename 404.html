@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - AA Nana Travels and Tours</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist. Return to our homepage or contact us for assistance.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <style>
+        .error-page {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--light-blue) 0%, #fff 100%);
+        }
+        
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 180px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 10px 10px 0 rgba(10, 36, 99, 0.1);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .error-title {
+            font-size: 32px;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+        
+        .error-message {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .error-actions .btn {
+            min-width: 200px;
+        }
+        
+        .search-box {
+            margin: 40px 0;
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+        
+        .search-box input:focus {
+            border-color: var(--accent-blue);
+            outline: none;
+        }
+        
+        .search-box button {
+            padding: 15px 30px;
+            border-radius: 50px;
+            white-space: nowrap;
+        }
+        
+        .helpful-links {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+        
+        .helpful-links h3 {
+            margin-bottom: 20px;
+        }
+        
+        .helpful-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .helpful-links-grid a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+        
+        .helpful-links-grid a:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 120px;
+            }
+            
+            .error-title {
+                font-size: 24px;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="logo-text">
+                    <h2>AA Nana Travels & Tours</h2>
+                    <p>Trusted Travel Agency Since 2013</p>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn btn-primary" style="padding: 8px 20px;">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2349018765432?text=Hello%20AA%20Nana%20Travels%20and%20Tours,%20I%20need%20help%20finding%20a%20page" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Error Page Content -->
+    <div class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code">404</div>
+                <h1 class="error-title">Oops! Page Not Found</h1>
+                <p class="error-message">The page you're looking for seems to have taken a trip without you. Don't worry, we'll help you find your way back!</p>
+                
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Go to Homepage
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-headset"></i> Contact Support
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for packages, services...">
+                    <button onclick="searchWebsite()" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                
+                <div class="helpful-links">
+                    <h3>Popular Destinations</h3>
+                    <div class="helpful-links-grid">
+                        <a href="packages.html#umrah">Umrah Packages</a>
+                        <a href="packages.html#dubai">Dubai Tours</a>
+                        <a href="packages.html#turkey">Turkey Tours</a>
+                        <a href="services.html#visa">Visa Assistance</a>
+                        <a href="services.html#flight">Flight Booking</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 40px;">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Travel" style="max-width: 100%; border-radius: 10px; opacity: 0.5;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchWebsite() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                alert('Search functionality coming soon! For now, please use our navigation menu or contact us directly.');
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h3>Get Exclusive Travel Deals</h3>
+                    <p>Subscribe to our newsletter and receive special offers, travel tips, and updates directly in your inbox.</p>
+                    
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="newsletter-input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                        <div class="newsletter-checkbox">
+                            <input type="checkbox" id="newsletterConsent" required>
+                            <label for="newsletterConsent">I agree to receive travel deals and updates</label>
+                        </div>
+                    </form>
+                    
+                    <div class="newsletter-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Exclusive subscriber-only deals</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Early access to Umrah packages</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Travel tips and destination guides</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2 style="color: var(--white);">AA Nana Travels & Tours</h2>
+                            <p style="color: rgba(255,255,255,0.7);">Trusted Travel Agency Since 2013</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; color: rgba(255,255,255,0.8);">Your trusted partner for unforgettable travel experiences. We deliver trust, comfort, and memorable journeys.</p>
+                    
+                    <!-- Trust Badges -->
+                    <div class="trust-badges-footer">
+                        <div class="trust-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>IATA Accredited</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>NANTA Member</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Booking</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html#flight">Flight Booking</a></li>
+                        <li><a href="services.html#visa">Visa Assistance</a></li>
+                        <li><a href="services.html#umrah">Umrah & Hajj</a></li>
+                        <li><a href="services.html#tours">Tour Packages</a></li>
+                        <li><a href="services.html#corporate">Corporate Travel</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Tresure island area 1, Abuja, Nigeria</li>
+                        <li><i class="fas fa-phone" style="margin-right: 8px;"></i> <strong>+234 901 876 5432</strong> (Primary)</li>
+                        <li><i class="fas fa-phone" style="margin-right: 8px;"></i> +234 803 273 3912 (Alternative)</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> info@aananatravels.com</li>
+                    </ul>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links-footer">
+                        <a href="https://www.facebook.com/aanana.travels.and.toursltd/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nanatravelsandtours/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/2349018765432" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <p>We Accept:</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <span class="payment-bank">Bank Transfer</span>
+                    <span class="payment-bank">Cash</span>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 AA Nana Travels and Tours Ltd. All rights reserved. | Abuja, Nigeria</p>
+                <div class="footer-links-small">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="my-link"> 
+            <a href="https://mohazgloballink.netlify.app">Created By Mohaz Global Link</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

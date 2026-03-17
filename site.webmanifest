@@ -1,0 +1,21 @@
+{
+    "name": "AA Nana Travels and Tours",
+    "short_name": "AANanaTravels",
+    "description": "Trusted travel agency in Abuja since 2013. Flight bookings, Umrah packages, visa assistance, and tour packages.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0a2463",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
