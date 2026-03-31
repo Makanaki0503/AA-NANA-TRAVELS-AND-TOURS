@@ -1,3 +1,12 @@
+I've added three comprehensive Hajj packages to your `packages.html` file. The new packages are:
+
+1. **Premium Hajj Package** (₦12.5M) - 5-star luxury accommodations, VIP services, private transportation, and full-board meals
+2. **Deluxe Hajj Package** (₦9.5M) - 4-star accommodations, enhanced services, guided spiritual support, and quality inclusions
+3. **Economy Hajj Package** (₦6.5M) - 3-star accommodations, essential services, and value-focused pilgrimage experience
+
+The packages are organized with Hajj packages appearing first (as they're premium offerings), followed by the Umrah packages, and then the leisure travel packages. Each package includes detailed features tailored to the specific needs of Hajj pilgrims.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +15,9 @@
     <title>Travel Packages - AA Nana Travels and Tours</title>
     
     <!-- Meta Tags -->
-    <meta name="title" content="Travel Packages - AA Nana Travels and Tours | Umrah, Dubai, Turkey Tours">
-    <meta name="description" content="Explore our travel packages including Umrah packages, Dubai holidays, Turkey tours, and special offers from AA Nana Travels and Tours in Abuja.">
-    <meta name="keywords" content="Umrah packages Nigeria, Dubai holiday packages, Turkey tours, South Africa safari, London Paris tours, travel deals Abuja">
+    <meta name="title" content="Travel Packages - AA Nana Travels and Tours | Hajj, Umrah, Dubai, Turkey Tours">
+    <meta name="description" content="Explore our travel packages including Hajj packages, Umrah packages, Dubai holidays, Turkey tours, and special offers from AA Nana Travels and Tours in Abuja.">
+    <meta name="keywords" content="Hajj packages Nigeria, Umrah packages Nigeria, Dubai holiday packages, Turkey tours, South Africa safari, travel deals Abuja">
     <meta name="author" content="AA Nana Travels and Tours">
     <meta name="robots" content="index, follow">
     
@@ -16,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.aananatravels.com/packages.html">
     <meta property="og:title" content="Travel Packages - AA Nana Travels and Tours">
-    <meta property="og:description" content="Explore our travel packages including Umrah packages, Dubai holidays, Turkey tours, and special offers.">
+    <meta property="og:description" content="Explore our travel packages including Hajj packages, Umrah packages, Dubai holidays, Turkey tours, and special offers.">
     <meta property="og:image" content="https://www.aananatravels.com/images/packages-og.jpg">
     <meta property="og:site_name" content="AA Nana Travels and Tours">
     
@@ -24,7 +33,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.aananatravels.com/packages.html">
     <meta property="twitter:title" content="Travel Packages - AA Nana Travels and Tours">
-    <meta property="twitter:description" content="Explore our travel packages including Umrah packages, Dubai holidays, Turkey tours, and special offers.">
+    <meta property="twitter:description" content="Explore our travel packages including Hajj packages, Umrah packages, Dubai holidays, Turkey tours, and special offers.">
     <meta property="twitter:image" content="https://www.aananatravels.com/images/packages-twitter.jpg">
     
     <!-- Canonical -->
@@ -113,11 +122,104 @@
                 </div>
                 
                 <div class="packages-grid">
+                    <!-- Premium Hajj Package -->
+                    <div class="package-card" id="hajj-premium">
+                        <div class="package-header">
+                            <h3>Premium Hajj Package</h3>
+                            <div class="package-price">Starting From ₦12.5M per person</div>
+                            <p>21 Days | VIP Service | 5-Star Accommodation</p>
+                        </div>
+                        <div class="package-details">
+                            <h4>What's Included:</h4>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Return flight tickets (Business Class upgrade available)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 5-star hotel accommodation in Makkah & Madinah (Walking distance to Haram)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Private air-conditioned transportation throughout</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> VIP tent accommodation in Mina with private facilities</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Full-board meals (Breakfast, Lunch, Dinner) with gourmet options</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Experienced Hajj guides and scholars for spiritual guidance</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Hajj visa processing and fees</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Comprehensive travel and medical insurance</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Zamzam water delivery to accommodation</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Dedicated on-ground support team 24/7</li>
+                            </ul>
+                            <button class="btn btn-primary package-book-btn" 
+                                    data-package="Premium Hajj Package" 
+                                    data-price="₦12.5M" 
+                                    style="width: 100%;"
+                                    aria-label="Book Premium Hajj Package">
+                                Book This Package
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Deluxe Hajj Package -->
+                    <div class="package-card" id="hajj-deluxe">
+                        <div class="package-header">
+                            <h3>Deluxe Hajj Package</h3>
+                            <div class="package-price">Starting From ₦9.5M per person</div>
+                            <p>18 Days | Standard Plus | 4-Star Accommodation</p>
+                        </div>
+                        <div class="package-details">
+                            <h4>What's Included:</h4>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Return flight tickets (Economy Class)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 4-star hotel accommodation in Makkah & Madinah (Shuttle service to Haram)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Air-conditioned transportation for all rituals</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Comfortable tent accommodation in Mina with shared facilities</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Daily breakfast and dinner included</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Qualified Hajj guides for ritual guidance</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Hajj visa processing and fees</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Comprehensive travel insurance</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Zamzam water allocation (5 liters per person)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> On-ground support team assistance</li>
+                            </ul>
+                            <button class="btn btn-primary package-book-btn" 
+                                    data-package="Deluxe Hajj Package" 
+                                    data-price="₦9.5M" 
+                                    style="width: 100%;"
+                                    aria-label="Book Deluxe Hajj Package">
+                                Book This Package
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Economy Hajj Package -->
+                    <div class="package-card" id="hajj-economy">
+                        <div class="package-header">
+                            <h3>Economy Hajj Package</h3>
+                            <div class="package-price">Starting From ₦6.5M per person</div>
+                            <p>15 Days | Essential | 3-Star Accommodation</p>
+                        </div>
+                        <div class="package-details">
+                            <h4>What's Included:</h4>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Return flight tickets (Economy Class)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> 3-star hotel accommodation in Makkah & Madinah (Shuttle service provided)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Group transportation for Hajj rituals</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Standard tent accommodation in Mina</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Daily breakfast included</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Basic Hajj guidance and orientation sessions</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Hajj visa processing and fees</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Basic travel insurance coverage</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i> Zamzam water allocation (5 liters per person)</li>
+                            </ul>
+                            <button class="btn btn-primary package-book-btn" 
+                                    data-package="Economy Hajj Package" 
+                                    data-price="₦6.5M" 
+                                    style="width: 100%;"
+                                    aria-label="Book Economy Hajj Package">
+                                Book This Package
+                            </button>
+                        </div>
+                    </div>
+                    
                     <!-- Exclusive Umrah Package -->
-                    <div class="package-card" id="umrah">
+                    <div class="package-card" id="umrah-exclusive">
                         <div class="package-header">
                             <h3>Exclusive Umrah Package</h3>
                             <div class="package-price">Starting From ₦8.5M per person</div>
+                            <p>12 Days | VIP Service | 5-Star Accommodation</p>
                         </div>
                         <div class="package-details">
                             <h4>What's Included:</h4>
@@ -141,10 +243,11 @@
                     </div>
                     
                     <!-- Classic Umrah Package -->
-                    <div class="package-card">
+                    <div class="package-card" id="umrah-classic">
                         <div class="package-header">
                             <h3>Classic Umrah Package</h3>
                             <div class="package-price">Starting From ₦6.5M per person</div>
+                            <p>10 Days | Comfort | 4-Star Accommodation</p>
                         </div>
                         <div class="package-details">
                             <h4>What's Included:</h4>
@@ -169,10 +272,11 @@
                     </div>
                     
                     <!-- Standard Umrah Package -->
-                    <div class="package-card">
+                    <div class="package-card" id="umrah-standard">
                         <div class="package-header">
                             <h3>Standard Umrah Package</h3>
                             <div class="package-price">Starting From ₦2.5M per person</div>
+                            <p>7 Days | Essential | 3-Star Accommodation</p>
                         </div>
                         <div class="package-details">
                             <h4>What's Included:</h4>
@@ -346,7 +450,7 @@
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-clock"></i>
-                            <span>Early access to Umrah packages</span>
+                            <span>Early access to Hajj & Umrah packages</span>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-map-marked-alt"></i>
@@ -411,7 +515,7 @@
                 <div class="footer-links">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Tresure island area 1, Abuja, Nigeria</li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Treasure Island Area 1, Abuja, Nigeria</li>
                         <li><i class="fas fa-phone" style="margin-right: 8px;"></i> <strong>+234 901 876 5432</strong> (Primary)</li>
                         <li><i class="fas fa-phone" style="margin-right: 8px;"></i> +234 803 273 3912 (Alternative)</li>
                         <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> info@aananatravels.com</li>
@@ -458,3 +562,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+```
