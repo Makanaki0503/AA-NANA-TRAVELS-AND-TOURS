@@ -1435,3 +1435,24 @@ footer {
     padding-bottom: 10px;
     border-bottom: 2px solid var(--light-blue);
 }
+
+/* Logo Image Styles */
+.logo-img {
+    height: 60px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.02);
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 45px;
+        max-width: 150px;
+    }
+}
