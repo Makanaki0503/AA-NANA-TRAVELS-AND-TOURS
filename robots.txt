@@ -1,0 +1,35 @@
+# robots.txt for AA Nana Travels and Tours
+# https://www.aananatravels.com/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /backup/
+Disallow: /booking-success.html
+Disallow: /payment-failed.html
+
+# Crawl delay to be respectful to the server
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://www.aananatravels.com/sitemap.xml
+
+# Host directive
+Host: https://www.aananatravels.com
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Disallow useless directories
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/temp/
